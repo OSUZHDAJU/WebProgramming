@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>lab1</title>
+
+</head>
+<body>
+<div class="intro">
+    <header>Vasilkov Nikita Igorevich, P3213, V. 13104</header>
+    <form class="container-1" name="main" action="handler.php" method="get" onsubmit="return validateForm()">
+        <div class="box-1"> Choose X value:
+            <input type="radio" name="xvalue" value="-2" checked="checked">-2<Br>
+            <input type="radio" name="xvalue" value="-1.5">-1.5<Br>
+            <input type="radio" name="xvalue" value="-1">-1<Br>
+            <input type="radio" name="xvalue" value="-0.5">-0.5<Br>
+            <input type="radio" name="xvalue" value="0">0<br>
+            <input type="radio" name="xvalue" value="0.5">0.5<br>
+            <input type="radio" name="xvalue" value="1">1<br>
+            <input type="radio" name="xvalue" value="1.5">1.5<br>
+            <input type="radio" name="xvalue" value="2">2<br>
+        </div>
+        <div class="box-2"> Choose Y value:
+            <input type="text" name="yvalue" id="yvalue" size="25px" placeholder="Введите значение Y от -3 до 5..."/><br />
+        </div>
+        <div class="box-3"> Choose R value:
+            <input type="text" name="rvalue" id="rvalue" size="25px" placeholder="Введите значение R от 1 до 4..."/><br />
+        </div>
+        <div class="box-4">
+            <div class="input-panel">
+                <input class="user-command" type="reset" value="Сбросить">
+                <input class="user-command" type="submit" value="Отправить">
+            </div>
+        </div>
+        <div class="box-5">
+            <img src="assets/schedule.png" alt="schedule">
+        </div>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
